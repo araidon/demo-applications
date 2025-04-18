@@ -1,4 +1,4 @@
-# readme　　
+# README
 
 本リポジトリは、Streamlitフレームワークを活用して作成した各種デモアプリケーションを保存・共有するための場所です。実験的な機能や便利なツールを随時追加していきます。
 
@@ -9,7 +9,7 @@
 ## 環境セットアップ
 
 ```bash
-pip install streamlit pandas matplotlib numpy beautifulsoup4 requests
+pip install streamlit pandas matplotlib numpy beautifulsoup4 requests folium geopandas streamlit-folium
 ```
 
 ## 使い方
@@ -47,3 +47,19 @@ streamlit run weather_streamlit.py
 
 ```bash
 streamlit run animation_demo.py
+```
+
+### 人口統計地図ビジュアライザー (population_map_dashboard.py)
+
+日本の都道府県別人口統計データを地図上にインタラクティブに可視化するアプリケーションです。GitHub Copilotのサポートを受けながら約1時間で開発しました。
+
+**特徴:**
+- 都道府県別の人口密度をヒートマップ表示
+- 年齢層別（0-14歳、15-64歳、65歳以上）の人口分布視覚化
+- 地域ごとの人口比較グラフ
+- 年別の人口変動表示（2015年～2021年）
+- トップ5都道府県のデータテーブル表示
+
+```bash
+streamlit run population_map_dashboard.py
+```
